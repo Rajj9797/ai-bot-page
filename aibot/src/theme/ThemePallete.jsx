@@ -1,4 +1,4 @@
-import { BorderColor } from "@mui/icons-material";
+
 
 export const getThemePallete = (mode) => ({
     palette: {
@@ -40,7 +40,7 @@ export const getThemePallete = (mode) => ({
         },
         h1: {
             fontFamily: 'Ubuntu, sans-serif',
-            color: mode == 'light' ? '#9785BA' : '#D7C7F4',
+            color: mode === 'light' ? '#9785BA' : '#D7C7F4',
             fontSize: 28,
             fontWeight: 700,
         },
@@ -74,10 +74,10 @@ export const getThemePallete = (mode) => ({
                 },
                 outlined: {
                     fontFamily: 'Ubuntu, sans-serif',
-                    color: mode == 'light' ? '#000' : '#fff',
-                    borderColor: mode == 'light' ? '#9785BA' : '#3d3b41',
+                    color: mode === 'light' ? '#000' : '#fff',
+                    borderColor: mode === 'light' ? '#9785BA' : '#3d3b41',
                     '&:hover': {
-                        background: mode == 'light' ? '#AF9FCD' : '#2a2730',
+                        background: mode === 'light' ? '#AF9FCD' : '#2a2730',
                     }
                 }
             }

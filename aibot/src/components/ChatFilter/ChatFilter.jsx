@@ -11,7 +11,7 @@ function ChatFilter({ allChats, filterChats }) {
 
     useEffect(() => {
 
-        if (option == 'All Ratings') {
+    if (option === 'All Ratings') {
             filterChats(allChats)
         }
         else {
@@ -20,7 +20,7 @@ function ChatFilter({ allChats, filterChats }) {
                 let found = false
 
                 item.chat.forEach(ch => {
-                    if (ch.rating == option) {
+                    if (ch.rating === option) {
                         found = true
                     }
                 })
