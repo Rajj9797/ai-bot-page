@@ -1,7 +1,7 @@
 import { Box, Select, MenuItem, Typography } from '@mui/material'
 import { useEffect, useState } from 'react'
 
-export default function ChatFilter({ allChats, filterChats }) {
+function ChatFilter({ allChats, filterChats }) {
 
     const [option, setOption] = useState('All Ratings')
 
@@ -9,7 +9,6 @@ export default function ChatFilter({ allChats, filterChats }) {
         setOption(e.target.value)
     }
 
-    // FILTER CHATS
     useEffect(() => {
 
         if (option == 'All Ratings') {
@@ -59,3 +58,5 @@ export default function ChatFilter({ allChats, filterChats }) {
         </Box>
     )
 }
+
+export default ChatFilter;

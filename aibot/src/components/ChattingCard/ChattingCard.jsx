@@ -8,7 +8,7 @@ import ThumbDownAltIcon from '@mui/icons-material/ThumbDownAlt';
 import { useEffect, useState } from 'react';
 import { format } from 'date-fns';
 
-export default function ChattingCard({ details, showFeedbackModal, updateChat, setSelectedChatId, readOnly = false }) {
+function ChattingCard({ details, showFeedbackModal, updateChat, setSelectedChatId, readOnly = false }) {
 
     const [isRating, setIsRating] = useState(false)
     const [rating, setRating] = useState(0)
@@ -149,3 +149,5 @@ export default function ChattingCard({ details, showFeedbackModal, updateChat, s
         </Stack>
     )
 }
+
+export default ChattingCard;

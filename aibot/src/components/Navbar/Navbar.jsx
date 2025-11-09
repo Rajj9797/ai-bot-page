@@ -6,7 +6,7 @@ import Brightness7Icon from '@mui/icons-material/Brightness7';
 import { ThemeContext } from '../../theme/ThemeContext';
 import { useContext } from 'react';
 
-export default function Navbar() {
+function Navbar() {
 
     const { handleMobileMenu } = useOutletContext();
     const isMobile = useMediaQuery('(max-width:800px)')
@@ -78,3 +78,5 @@ export default function Navbar() {
         </Stack>
     )
 }
+
+export default Navbar;

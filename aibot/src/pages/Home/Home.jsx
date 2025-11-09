@@ -10,7 +10,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import { ThemeContext } from '../../theme/ThemeContext';
 import { useContext } from 'react';
 
-export default function Home() {
+function Home() {
 
     const [showModal, setShowModal] = useState(false)
     const listRef = useRef(null)
@@ -20,7 +20,6 @@ export default function Home() {
     const { chat, setChat } = useOutletContext();
     const { mode } = useContext(ThemeContext)
 
-    // GENERATING AI RESPONSE
     const generateResponse = (input) => {
 
         const response = data.find(item => input.toLowerCase() == item.question.toLowerCase())
@@ -50,7 +49,6 @@ export default function Home() {
 
     }
 
-    //AUTOSCROLL TO LAST ELEMENT
     useEffect(() => {
         listRef.current?.lastElementChild?.scrollIntoView()
     }, [scrollToBottom])
@@ -110,3 +108,5 @@ export default function Home() {
         </Stack>
     )
 }
+
+export default Home;

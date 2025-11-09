@@ -2,7 +2,7 @@ import { Box, Typography, Stack } from '@mui/material'
 import { format, isEqual, startOfDay, add } from 'date-fns'
 import ChattingCard from '../ChattingCard/ChattingCard'
 
-export default function ChatHistoryCard({ details }) {
+function ChatHistoryCard({ details }) {
 
     const formatDate = (date) => {
         const today = startOfDay(new Date())
@@ -38,3 +38,5 @@ export default function ChatHistoryCard({ details }) {
         </Box>
     )
 }
+
+export default ChatHistoryCard;

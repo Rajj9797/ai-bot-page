@@ -2,7 +2,7 @@ import { TextField, Box, Button, Stack, Snackbar, useMediaQuery } from '@mui/mat
 import { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 
-export default function ChatInput({ generateResponse, setScroll, chat, clearChat }) {
+function ChatInput({ generateResponse, setScroll, chat, clearChat }) {
 
     const [input, setInput] = useState('')
     const inputRef = useRef(null)
@@ -103,3 +103,5 @@ export default function ChatInput({ generateResponse, setScroll, chat, clearChat
         </Box>
     )
 }
+
+export default ChatInput;

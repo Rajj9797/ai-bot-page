@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import AddCommentIcon from '@mui/icons-material/AddComment';
 import CloseIcon from '@mui/icons-material/Close';
 
-export default function Sidebar({ setChat, closeMenu }) {
+function Sidebar({ setChat, closeMenu }) {
 
     const { mode, setMode } = useContext(ThemeContext)
     const isMobile = useMediaQuery('(max-width:800px)')
@@ -90,3 +90,5 @@ export default function Sidebar({ setChat, closeMenu }) {
         </Box>
     )
 }
+
+export default Sidebar;

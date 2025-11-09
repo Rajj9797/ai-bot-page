@@ -3,7 +3,7 @@ import FeedbackIcon from '@mui/icons-material/Feedback';
 import CloseIcon from '@mui/icons-material/Close';
 import { useState } from 'react';
 
-export default function FeedbackModal({ open, handleClose, chatId, updateChat }) {
+function FeedbackModal({ open, handleClose, chatId, updateChat }) {
 
     const [input, setInput] = useState('')
 
@@ -89,3 +89,5 @@ export default function FeedbackModal({ open, handleClose, chatId, updateChat })
         </Modal>
     )
 }
+
+export default FeedbackModal;

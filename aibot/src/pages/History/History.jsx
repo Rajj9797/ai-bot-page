@@ -4,7 +4,7 @@ import ChatHistoryCard from '../../components/ChatHistoryCard/ChatHistoryCard'
 import ChatFilter from '../../components/ChatFilter/ChatFilter'
 import Navbar from '../../components/Navbar/Navbar'
 
-export default function History() {
+function History() {
 
     const [chats, setChats] = useState([])
     const [filteredChats, setFilteredChats] = useState([])
@@ -83,3 +83,5 @@ export default function History() {
         </Box>
     )
 }
+
+export default History;

@@ -2,7 +2,7 @@ import { Box, Typography, Stack, Grid } from '@mui/material'
 import icon from '../../assets/bot.png'
 import Card from './Card'
 
-export default function InitialChat({ generateResponse }) {
+function InitialChat({ generateResponse }) {
 
     const initialData = [
         {
@@ -53,3 +53,5 @@ export default function InitialChat({ generateResponse }) {
         </Stack>
     )
 }
+
+export default InitialChat;
