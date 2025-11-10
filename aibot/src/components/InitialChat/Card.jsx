@@ -1,6 +1,5 @@
 import { Box, Typography, Stack, IconButton } from '@mui/material'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
-import { styled } from '@mui/material/styles';
 
 function Card({ heading, subtext, handleClick }) {
 
